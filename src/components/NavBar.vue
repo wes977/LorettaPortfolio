@@ -1,8 +1,8 @@
 <template>
-    <v-toolbar color="#a43cb5">
+    <v-toolbar color="#d13643">
         <v-toolbar-title class="TitleWords" >Loretta</v-toolbar-title>
         <v-spacer></v-spacer>
-        <v-toolbar-items class="hidden-sm-and-down">
+        <v-toolbar-items>
             <v-btn flat class="hvr-shutter-in-vertical ">About me</v-btn>
             <v-btn flat class="hvr-shutter-in-vertical ">Projects</v-btn>
             <v-btn flat class="hvr-shutter-in-vertical ">Contact</v-btn>
@@ -35,7 +35,7 @@ export default {
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
-  background: #9c27b0;
+  background: #cf202f;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.3s;

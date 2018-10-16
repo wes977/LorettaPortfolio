@@ -1,24 +1,34 @@
 <template>
-  <v-container fluid>
-    <v-slide-y-transition mode="out-in">
-      <v-layout column align-center>
-        <img src="@/assets/logo.png" alt="Vuetify.js" class="mb-5">
-        <blockquote>
-          &#8220;First, solve the problem. Then, write the code.&#8221;
-          <footer>
-            <small>
-              <em>&mdash;John Johnson</em>
-            </small>
-          </footer>
-        </blockquote>
+  <v-container fluid grid-list-md >
+      <v-layout column justify-space-between >
+        <v-flex>
+          <v-layout row wrap align-content-start>
+<ProjectTile v-bind:tileSize="1"/>
+<ProjectTile v-bind:tileSize="3"/>
+<ProjectTile v-bind:tileSize="1"/>
+<ProjectTile v-bind:tileSize="1"/>
+<ProjectTile v-bind:tileSize="2"/>
+<ProjectTile v-bind:tileSize="1"/>
+<ProjectTile v-bind:tileSize="3"/>
+<ProjectTile v-bind:tileSize="1"/>
+<ProjectTile v-bind:tileSize="2"/>
+<ProjectTile v-bind:tileSize="1"/>
+<ProjectTile v-bind:tileSize="3"/>
+<ProjectTile v-bind:tileSize="1"/>
+<ProjectTile v-bind:tileSize="2"/>
+          </v-layout>
+        </v-flex>
       </v-layout>
-    </v-slide-y-transition>
-  </v-container>
+    </v-container>
+
+
 </template>
 
 <script>
+import ProjectTile from '../components/ProjectTile.vue'
 export default {
   name: 'Homepage',
+  components: {ProjectTile},
   props: {
     msg: String
   }

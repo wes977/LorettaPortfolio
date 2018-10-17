@@ -1,8 +1,11 @@
 <template>
     <v-flex d-flex xs6 sm6 md3 lg3 v-if="this.tileSize == 1 ">
-        <v-card :hover="true" tile flat >
+        <v-card :hover="true" tile flat height="100%" >
+            <div class="DisplayCardContainer">
+            <div class="InfoCard">This is a TEST</div>
             <div class="DisplayCard">
                 <img src="../assets/old-milwaukee.png" alt="Smiley face" height="auto" width="100%"> 
+            </div>
             </div>
         </v-card>
     </v-flex>
@@ -34,16 +37,37 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.DisplayCardContainer {
+    
+}
+
+.DisplayCard,
+.InfoCard {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.InfoCard {
+    opacity: 0.5;
+  z-index: 10;
+  width: auto;
+  height: 100%;
+  display: none;
+}
+
 .DisplayCard {
-    background-color: transparent !important;
-    height:auto;
+    opacity: 1;
+    height: 100%;
     max-height: 250px;
    background: #fff;
     -moz-transition: all .2s ease-in;
     -o-transition: all .2s ease-in;
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
-    background: #f5f5f5;
+    background: #fff;
+
 }
 .DisplayCard img {
     background-color: transparent;

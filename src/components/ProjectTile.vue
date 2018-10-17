@@ -38,10 +38,30 @@ export default {
     background-color: transparent !important;
     height:auto;
     max-height: 250px;
+   background: #fff;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    background: #f5f5f5;
 }
 .DisplayCard img {
     background-color: transparent;
     height:auto;
     max-height: 250px;
 }
+.DisplayCard:hover {
+    background: rgb(231, 7, 7) !important;
+
+}
+
+@keyframes highlight {
+ 	0% {
+ 		background: red
+ 	}
+ 	100% {
+ 		background: red;
+ 	}
+}
+
 </style>

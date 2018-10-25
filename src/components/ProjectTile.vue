@@ -110,7 +110,8 @@ opacity: 1;
   position: absolute;
   top: 0;
   left: 0;
-
+    width: 100%;
+    height: 100%;
   text-align: center;
 }
 
@@ -119,18 +120,18 @@ div.ProjectBoxContainer:hover img.image {
 }
 
 .ProjectBoxContainer:hover .middle {
-  opacity: 1;
+    opacity: 1;
     width: 100%;
-  height: 100%;
+    height: 100%;
 }
 
 .text {
-  background-color: #4CAF50;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
-height: 100%;
-opacity: 0.6;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    height: 100%;
+    opacity: 0.6;
 }
 
 

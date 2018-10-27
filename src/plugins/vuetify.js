@@ -29,3 +29,4 @@ Vue.use(Vuetify, {
   },
   iconfont: 'md',
 })
+

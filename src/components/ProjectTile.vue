@@ -105,14 +105,14 @@ opacity: 1;
 }
 
 .middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-  text-align: center;
+    text-align: center;
 }
 
 div.ProjectBoxContainer:hover img.image {
